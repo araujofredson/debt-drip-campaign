@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { AlertTriangle, Clock, Mail, Phone, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import EmailTest from './EmailTest';
 
 const Dashboard = () => {
   const stats = [
@@ -88,6 +88,9 @@ const Dashboard = () => {
           );
         })}
       </div>
+
+      {/* Adicionar o componente de teste de email */}
+      <EmailTest />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card>
